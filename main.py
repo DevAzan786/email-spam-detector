@@ -7,6 +7,10 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
 
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 try:
   vectorize = pickle.load(open('vectorize.pkl','rb'))
   model = pickle.load(open('MNB.pkl','rb'))
